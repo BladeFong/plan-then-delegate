@@ -1,0 +1,8 @@
+interface:
+  display_name: "Plan-Then-Delegate"
+  short_description: "轻量智能任务分发：主代理对齐方案，子代理串行落盘+自跑编译"
+  brand_color: "#3B82F6"
+  default_prompt: "使用 $plan-then-delegate 来走主代理对齐方案、子代理串行落实的工作流"
+
+policy:
+  allow_implicit_invocation: false
