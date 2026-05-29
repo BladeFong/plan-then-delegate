@@ -69,7 +69,7 @@ Main agent diagnoses → aligns plan with user
        │
        ...
        ▼
-(optional) Supplementary test loop: test agent V ↔ fix agent F take turns
+(optional) Supplementary test loop: CC version F ↔ V direct, main agent stays out
        ▼
 Main agent consolidates everything into the project's summary / long-term docs
 ```
@@ -81,6 +81,7 @@ Core rules:
 - One issue → one subagent (all files for that issue go in the same subagent)
 - Subagents return only "change notes"; the main agent organizes documentation
 - Impl subagents self-run compile; tests are owned by the test subagent (when the supplementary test loop is enabled)
+- In CC version, F ↔ V communicate directly via `SendMessage` — main agent does not intermediate
 
 See each platform's `SKILL.md` for full execution rules.
 

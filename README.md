@@ -69,7 +69,7 @@ ln -s "$(pwd)/codex/plan-then-delegate" ~/.codex/skills/plan-then-delegate
        │
        ...
        ▼
-（可选）补充测试循环：测试代理 V ↔ 修复代理 F 轮流跑
+（可选）补充测试循环：CC 版 F ↔ V 直连，主代理不参与中继
        ▼
 主代理统一整理项目约定的汇总 / 长期文档
 ```
@@ -81,6 +81,7 @@ ln -s "$(pwd)/codex/plan-then-delegate" ~/.codex/skills/plan-then-delegate
 - 一个问题对应一个子代理（同问题多文件全部在同一子代理里完成）
 - 子代理只反馈"修改要点"；文档由主代理统一组织
 - 实现子代理自跑编译；测试由测试子代理负责（如启用补充测试循环）
+- CC 版测试循环中 F ↔ V 通过 `SendMessage` 直连，主代理不参与中间来回
 
 详细执行规则见各平台 `SKILL.md`。
 
